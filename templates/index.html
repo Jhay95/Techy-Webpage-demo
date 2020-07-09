@@ -8,7 +8,8 @@
     <script
         src="https://kit.fontawesome.com/eb1d0ec6ca.js"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    <link rel="stylesheet"
+        href="{{ url_for('static',filename='styles/style.css') }}">
     <link
         href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
         rel="stylesheet">
@@ -16,6 +17,10 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
         crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <title>Tech School</title>
 </head>
 
@@ -165,7 +170,7 @@
             <hr class="second">
 
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-lg-3">
                     <i
                         class="fas fa-code fa-5x"></i>
                     <h4>Basics</h4>
@@ -174,7 +179,7 @@
                         elit.
                     </p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-lg-3">
                     <i
                         class="fas fa-magic fa-5x"></i>
                     <h4>Creativity</h4>
@@ -184,7 +189,7 @@
                         quas
                         ab iure cum.</p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-lg-3">
                     <i
                         class="fas fa-handshake fa-5x"></i>
                     <h4>Partnership</h4>
@@ -194,7 +199,7 @@
                         dignissimos
                         praesentium quia.</p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-lg-3">
                     <i
                         class="fas fa-award fa-5x"></i>
                     <h4>Awards and Recognition
@@ -224,7 +229,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <i
                         class="fas fa-chalkboard-teacher fa-5x"></i>
                     <h4>STEM DRIVE</h4>
@@ -232,7 +237,7 @@
                         consectetur adipisicing
                         elit.</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <i
                         class="fas fa-microchip fa-5x"></i>
                     <h4>TECHNOLOGY RETROSPECT</h4>
@@ -240,7 +245,7 @@
                         consectetur adipisicing
                         elit.</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <i
                         class="fas fa-landmark fa-5x"></i>
                     <h4>FACILITY</h4>
@@ -264,74 +269,33 @@
             <hr class="second">
 
             <div class="container-fluid">
-                <div id="carousel-example"
-                    class="carousel slide"
-                    data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active"
-                            role="listbox">
-                            <ul class="row">
-                                <li
-                                    class="col-sm-4">
-                                    <img src="{{ url_for('static',filename='images/iroko.png') }}"
-                                        alt="...">
-                                </li>
-                                <li
-                                    class="col-sm-4">
-                                    <img src="{{ url_for('static',filename='images/obi.png') }}"
-                                        alt="...">
-                                </li>
-
-                                <li
-                                    class="col-sm-4">
-                                    <img src="{{ url_for('static',filename='images/lagos.png') }}"
-                                        alt="...">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="carousel-item"
-                            role="listbox">
-                            <ul class="row">
-                                <li
-                                    class="col-sm-4">
-                                    <img src="{{ url_for('static',filename='images/sterling.png') }}"
-                                        alt="...">
-                                </li>
-                                <li
-                                    class="col-sm-4">
-                                    <img src="{{ url_for('static',filename='images/iroko.png') }}"
-                                        alt="...">
-                                </li>
-
-                                <li
-                                    class="col-sm-4">
-                                    <img src="{{ url_for('static',filename='images/lagos.png') }}"
-                                        alt="...">
-                                </li>
-                            </ul>
-                        </div>
+                <div
+                    class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="{{ url_for('static',filename='images/iroko.png') }}"
+                            alt="...">
 
                     </div>
-                    <a class="carousel-control-prev"
-                        href="#carousel-example"
-                        role="button"
-                        data-slide="prev">
-                        <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"></span>
-                        <span
-                            class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next"
-                        href="#carousel-example"
-                        role="button"
-                        data-slide="next">
-                        <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"></span>
-                        <span
-                            class="sr-only">Next</span>
-                    </a>
+                    <div class="item">
+                        <img src="{{ url_for('static',filename='images/obi.png') }}"
+                            alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="{{ url_for('static',filename='images/lagos.png') }}"
+                            alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="{{ url_for('static',filename='images/sterling.png') }}"
+                            alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="{{ url_for('static',filename='images/iroko.png') }}"
+                            alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="{{ url_for('static',filename='images/lagos.png') }}"
+                            alt="...">
+                    </div>
 
                 </div>
             </div>
@@ -347,8 +311,10 @@
                     consectetur adipisicing
                     fugiat!</i>
             </p>
+
+            <!---Start Tabs Navigation-->
             <nav>
-                <ul class="nav nav-tabs center-block"
+                <ul class="navbar-nav navbar-text nav-tabs center-block"
                     role="tablist">
                     <li><a href="#"
                             aria-controls="videos"
@@ -361,9 +327,35 @@
                     </li>
                 </ul>
             </nav>
-            <div>
+            <!---End Tabs Navigation-->
 
+
+            <!-- Tab Panes Start -->
+
+            <!--Start Video Tab Pane-->
+            <div class="tab-content">
+                <div role="tabpanel"
+                    class="tab-pane active"
+                    id="videos">
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?list=PLH93ic6l13zd_WlkEtGiLRuUNseqGL_pf"
+                        width="100%" height="480"
+                        frameborder="0"
+                        allowfullscreen="allowfullscreen"></iframe>
+                </div>
             </div>
+            <!--End Video Tab Pane-->
+
+            <!--Start Gallery Tab Pane-->
+            <div class="tab-content">
+                <div role="tabpanel"
+                    class="tab-pane" id="gallery">
+
+                </div>
+            </div>
+            <!--End Gallery Tab Pane-->
+
+            <!-- Tab Panes Ends -->
         </div>
     </section>
 
@@ -372,6 +364,79 @@
             <h2>CLIENTS’ RECOGNITION</h2>
             <hr class="first">
             <hr class="second">
+
+            <div id="carouselExampleSlidesOnly"
+                class="carousel slide"
+                data-ride="carousel">
+                <div class="carousel-inner">
+                    <div
+                        class="carousel-item active">
+                        <div
+                            class="d-block w-100">
+                            <h6>In fugiat odio
+                                error
+                                repudiandae
+                                reprehenderit
+                                velit
+                                doloribus
+                                culpa,
+                                repellendus.
+                            </h6>
+                            <p><em>Ipsam
+                                    ipsum</em>
+                                Lorem
+                                ipsum sit </p>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div
+                            class="d-block w-100">
+                            <h6>Lorem ipsum
+                                dolor sit amet
+                                consectetur
+                                adipisicing
+                                elit. </h6>
+                            <p><em>Ipsam
+                                    ipsum</em>
+                                Lorem
+                                ipsum sit </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div
+                            class="d-block w-100">
+                            <h6>Lorem ipsum
+                                fugiat odio
+                                error
+                                repudiandae
+                                reprehenderit
+                                repellendus.
+                            </h6>
+                            <p><em>Ipsam
+                                    ipsum</em>
+                                Lorem
+                                ipsum sit </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div
+                            class="d-block w-100">
+                            <h6>Lorem ipsum
+                                dolor velit
+                                doloribus
+                                culpa,
+                                repellendus.
+                            </h6>
+                            <p><em>Ipsam
+                                    ipsum</em>
+                                Lorem
+                                ipsum sit </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -382,7 +447,7 @@
             <hr class="second">
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-lg-6">
                 <div>
                     <h4>
                         <strong>ADDRESS</strong>
@@ -412,22 +477,26 @@
                     </h4>
                     <ul>
                         <li>
+
                             <i class="fa fa-facebook-square"
-                                aria-hidden="true"></i>
+                                aria-hidden="true"><a
+                                    href="#"></a></i>
                         </li>
                         <li>
                             <i class="fa fa-twitter-square"
-                                aria-hidden="true"></i>
+                                aria-hidden="true"><a
+                                    href="#"></a></i>
                         </li>
                         <li>
                             <i class="fa fa-linkedin-square"
-                                aria-hidden="true"></i>
+                                aria-hidden="true"><a
+                                    href="#"></a></i>
                         </li>
                     </ul>
                 </div>
 
             </div>
-            <div class="col-sm-6">
+            <div class="col-lg-6">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.684901912981!2d3.4775371143653864!3d6.4345043259776755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5b42784ea83%3A0x4a0b007c64b7f703!2sAudax+Solutions+Limited!5e0!3m2!1sen!2sng!4v1459772070606"
                     width="500" height="400"
@@ -452,6 +521,13 @@
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+    <script type="text/javascript"
+        src="{{ url_for('static', filename='index.js') }}"></script>
+
 </body>
 
 </html>

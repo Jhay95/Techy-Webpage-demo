@@ -159,7 +159,6 @@ h5 {
 }
 
 
-
 /*---- Work ----*/
 #work {
     height: 20%;
@@ -168,7 +167,9 @@ h5 {
     padding: 70px;
 }
 
-
+ul.nav-tabs {
+    display: inline-block;
+}
 
 /*---- Testimonials ----*/
 
