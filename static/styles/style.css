@@ -1,4 +1,4 @@
-*, body {
+* {
     padding: 0;
     margin: 0;
 }
@@ -59,9 +59,7 @@ section {
     text-align: center;
   }
 
-.carousel-item li {
-display: inline-block;
-}
+
 /*---- Code School ----*/
 
 #code-school {
@@ -167,10 +165,6 @@ h5 {
     padding: 70px;
 }
 
-ul.nav-tabs {
-    display: inline-block;
-}
-
 /*---- Testimonials ----*/
 
 #testimonials {
@@ -206,14 +200,15 @@ ul.nav-tabs {
 }
 
 
-footer {
+footer div {
     background-color: rgb(70, 66, 66);
     text-align: center;
     color: blanchedalmond;
-    min-height: 25px;
-    width: 100%;
-    margin-bottom: 0;
+    height: 30px;
+    margin: 0 auto;
 }
+
+
 
 @media (max-width:600px) {
     .col-sm-4,.col-sm-3,.col-sm-6 {
