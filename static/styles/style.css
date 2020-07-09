@@ -23,6 +23,7 @@ section {
     text-transform: uppercase;
     font-weight: normal;
     letter-spacing: .1rem;
+    width: 100%;
     background: rgba(168, 163, 163, 0.534);
 }
 
@@ -199,6 +200,11 @@ h5 {
     
 }
 
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
 
 footer div {
     background-color: rgb(70, 66, 66);
@@ -211,6 +217,7 @@ footer div {
 
 
 @media (max-width:600px) {
+
     .col-sm-4,.col-sm-3,.col-sm-6 {
         margin: 25px 10px 25px 10px;
     }
@@ -230,5 +237,6 @@ footer div {
         margin: 0 ;
         padding: 0;
     }
+
 
 }
