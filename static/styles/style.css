@@ -36,7 +36,7 @@ section {
 }
 /*---- Header ----*/
 #landing {
-    background-image:url(images/images.jpg);
+    background-image:url('../images/images.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -106,7 +106,7 @@ hr.second {
 #why {
     margin: 0 auto;
     padding: 70px;
-    background-image: url(/Techy-Webpage-demo/static/images/cp1.jpg);
+    background-image: url('../images/cp1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -147,11 +147,10 @@ h5 {
 
 
 /*---- Partners ----*/
-
 #partners {
     height: 20%;
     color: rgb(20, 20, 20);
-    background-image: url(/Techy-Webpage-demo/static/images/our\ connect.jpg);
+    background-image: url('../images/our-connect.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -162,7 +161,6 @@ h5 {
 
 
 /*---- Work ----*/
-
 #work {
     height: 20%;
     color: rgb(20, 20, 20);
@@ -178,7 +176,7 @@ h5 {
     height:20%;
     padding: 70px;
     color: rgb(20, 20, 20);
-    background-image: url(/Techy-Webpage-demo/static/images/p-cp.jpg);
+    background-image: url('../images/p-cp.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
